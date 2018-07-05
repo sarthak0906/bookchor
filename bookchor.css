@@ -1,0 +1,104 @@
+
+img{
+	padding: 10px;
+}
+
+#main_content{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#business_details{
+	display: none;
+}
+
+#shop_details{
+	display: none;
+}
+
+#input_section{
+	display: none;
+}
+
+#collapse_button{
+/*	display: block;*/
+}
+
+#manager_users{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.rounded-circle{
+	padding: 50px;
+}
+
+.card{
+	padding: 0px;
+ 	align-items: ;
+ 	align-self:;
+}
+
+.card-content{
+	padding: 20px;
+	align-items: center;
+}
+
+.card-header{
+	padding: 2px;
+	align-self: ;
+	align-items: center;
+}
+
+
+.active{
+	margin-bottom:;
+	border-width: 0px,0px,5px,0px;
+}
+
+@media (min-width: 992px){
+	
+	#main_content{
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+
+	#input_section{
+		display: block;
+	}
+
+	#collapse_section{
+/*		display: none;*/
+	}
+
+	#business_details{
+		display: block;
+	}
+
+	#shop_details{
+		display: block;
+	}
+
+
+	.card{
+		width: auto;
+		height: auto;
+		padding: 2px;
+	 	align-items: ;
+	 	align-self:;
+
+	}
+
+	.card-content{
+		padding: 20px;
+		padding-bottom: 40px;
+		padding-top: 40px;
+		align-items: center;
+	}
+
+	.card-header{
+		padding: 20px;
+		align-self: ;
+		align-items: center;
+	}
+}

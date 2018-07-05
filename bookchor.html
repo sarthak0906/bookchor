@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookchor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bookchor.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	
+</head>
+<body>
+	<div id="loading-index">
+    <!-- LOADING ICON -->	
+        <center>
+            <i class="fas fa-spinner fa-spin fa-6x"></i>
+        </center>
+    </div>
+    <!-- /LOADING ICON -->
+    
+    <div id="main-content" >
+    	<!-- section code for header -->
+    	<div class="container container-fluid" style="padding: 15px; padding-left: 0px;">
+    		<div class="row ">
+    			<div class="col-sm-1 col-md-1" id="collapse_button">
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="float:left; left:1em;">
+        	    	    <span class="glyphicon glyphicon-menu-hamburger"></span>
+            	    </button>
+    			</div>
+    			<div class="col col-md-5 col-sm-10 " style="float: left; padding-left: 20px; ">
+    				<img src="Destop_Onbording.png">
+    			</div>
+    			<div class="col col-md-5 form-group" id="input_section" style="border: 1px; padding-top: 40px; border-color: black;">
+    				<div class="input-group">
+	    				<input type="text" placeholder="Search for Dashboard" class="form-control">
+	    				<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+    				</div>
+    			</div>
+    			<div class="col col-md-1 col-sm-1">
+	    			<img src="user.png" class="float-left" style="padding: 5px; padding-top: 0px; padding-left: 0px; float: left;">
+    			</div>
+
+    		</div>
+    	</div>
+    	<!-- /section code for header -->
+    	
+    	<!-- section code for nav bar-->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
+        	<!-- Links -->
+            <ul class="nav navbar-nav nav-justified nav-tabs" style="">
+	   			<li class="nav-item col">
+	   				<a class="nav-link" data-toggle="tab" href="#">Manager Product</a>
+	   			</li>
+	   			<li class="nav-item" col>
+	   				<a class="nav-link" data-toggle="tab" href="#">Manager Orders</a>
+	   			</li>
+	   			<li class="nav-item">
+	   				<a class="active nav-link" data-toggle="tab" href="#manager_users">Manager Users</a>
+	   			</li>
+	   			<li class="nav-item">
+	   				<a class="nav-link" data-toggle="tab" href="#">Support</a>
+	   			</li>
+	   			<li class="nav-item">
+	   				<a class="nav-link" data-toggle="tab" href="#">Feedback</a>
+	   			</li>
+	   		</ul>
+	    </div>
+	   	<!-- /section code for nav bar-->
+    </div>
+    
+    <div class="tab-data">
+    <!-- section code for manager users nav item -->
+	    <div class="tab-pane active" id="manager_users" style="padding: 20px;">
+	    	<img src="progress_bar.png" width="100%" style="padding: 30px,20px,30px,20px; min-height: 100px" height="200px">
+	    	<div class="container-fluid row" >
+	    		<div class="col-md-4 col-sm-4" >
+	   			  	<div class="card" id="business_details" style="border-color: #0066cc;">
+	    				<div class="card-header bg-info" style="background-color: #0066cc;"><p align="center">Business Details</p></div>
+	    				<div class="card-content">You need to provide GSTIN,TAN and other business details</div>
+	    				<div class="card-footer" align="center">
+	    					<button class="btn btn-info btn-disabled">Add Detail</button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-4 col-sm-4">
+	    		  	<div class="card " id="bank_details">
+	    				<div class="card-header btn-warning"><p align="center">Bank Details</p></div>
+	    				<div class="card-content">We need your bank account details and KYC documents to verify your Bank Account Details</div>
+	    				<div class="card-footer" align="center">
+	    					<button class="btn btn-warning">Add Detail</button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-4 col-sm-4">
+	    		   <div class="card bg-default" id="shop_details">
+	    				<div class="card-header"><p align="center">Shop Details</p></div>
+	    				<div class="card-content">You need to provide GSTIN,TAN and other business details</div>
+	    				<div class="card-footer" align="center">
+	    					<button class="btn btn-default">Add Detail</button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+    <!-- /section code for manager users nav item -->
+	</div>
+
+	<!-- Footer  -->
+   	<footer>
+   		<div>
+   			<span class="glyphicon glyphicon-earphone" style="float: right; padding: 15px;"></span>
+   			<span class="glyphicon glyphicon-envelope" style="float: right; padding: 15px;"></span>
+   		</div>
+   		<br><br><br>
+   		<div class="row" style="background-color: #222;float: right;">
+   			<ul class="nav nav-bar bg-dark" style="float: right;padding-right: 20px;">
+   				<li class="nav-item">
+   					<a href="#">About Us</a>
+   				</li>
+   				<li class="nav-item">
+   					<a href="#">Contact Us</a>
+   				</li>
+   				<li class="nav-item">
+   					<a href="#">FAQ.s</a>
+   				</li>
+   			</ul>
+   		</div>
+   	</footer>
+	<!-- Footer  -->
+
+</body>
+</html>
